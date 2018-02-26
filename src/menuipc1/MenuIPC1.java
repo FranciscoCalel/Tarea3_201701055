@@ -20,6 +20,7 @@ public class MenuIPC1 {
             Scanner scan = new Scanner(System.in);//objeto asociado
             int opcion;// variable
             do{//bucle
+                System.out.println("[IPC1] Tarea3_201701055");
                 System.out.println("1. Usuario");//formato de opciones  del menu
                 System.out.println("2. Contador de Digitos");
                 System.out.println("3. Tres numero mayor a menor");
@@ -249,6 +250,10 @@ public class MenuIPC1 {
                     case 2:
                         ingreasarnota1();
                         ingreasarnota2();
+                        ingreasarnota3();
+                        ingreasarnota4();
+                        ingreasarnota5();
+                        ingreasarnota6();
                     break;
                     case 3:
                         
@@ -281,19 +286,19 @@ public class MenuIPC1 {
                     
                 }
             }
-        }
+        }//no pude realizar la matriz
         //ingreso de notas por alumno
         public static void ingreasarnota1(){//ingreso de notas por alumno1
             Scanner scan = new Scanner(System.in);
            
             int notas;// se declra variable
-            System.out.println("ingrese numero de notas");
+            System.out.println("ingrese numero de notas del primer alumno");
             notas= scan.nextInt();
             
             double c=1.0,prom=0.0,suma=0.0;//numero real
             while(c>=1 && c<=notas){
                 double not;
-                System.out.println("ingrese las notas");
+                System.out.println("ingrese las notas primer alumno");
                 not=scan.nextDouble();//formato de un numero real
                 suma=suma+not;
                 c++;//aumento
@@ -301,20 +306,20 @@ public class MenuIPC1 {
             prom=suma/notas;//operacion
             System.out.println("promedio es"+prom);
             
-        }
+        }//no pude realizar la matriz
         
         
         public static void ingreasarnota2(){
             Scanner scan = new Scanner(System.in);
            
             int notas;
-            System.out.println("ingrese numero de notas");
+            System.out.println("ingrese numero de notas del segundo alumno");
             notas= scan.nextInt();
             
             double d=1.0,prom1=0.0,suma=0.0;
             while(d>=1 && d<=notas){
                 double not;
-                System.out.println("ingrese las notas");
+                System.out.println("ingrese las notas del segundo alumno");
                 not=scan.nextDouble();
                 suma=suma+not;
                 d++;
@@ -325,19 +330,19 @@ public class MenuIPC1 {
             
             
             
-        }
+        }//no pude realizar la matriz
         
         public static void ingreasarnota3(){
             Scanner scan = new Scanner(System.in);
            
             int notas;
-            System.out.println("ingrese numero de notas");
+            System.out.println("ingrese numero de notas del tercer alumno");
             notas= scan.nextInt();
             
             double e=1.0,prom2=0.0,suma=0.0;
             while(e>=1 && e<=notas){
                 double not;
-                System.out.println("ingrese las notas");
+                System.out.println("ingrese las notas del tercer alumno");
                 not=scan.nextDouble();
                 suma=suma+not;
                 e++;
@@ -348,19 +353,19 @@ public class MenuIPC1 {
             
             
             
-        }
+        }//no pude realizar la matriz
         
         public static void ingreasarnota4(){
             Scanner scan = new Scanner(System.in);
            
             int notas;
-            System.out.println("ingrese numero de notas");
+            System.out.println("ingrese numero de notas del cuarto alumno");
             notas= scan.nextInt();
             
             double f=1.0,prom3=0.0,suma=0.0;
             while(f>=1 && f<=notas){
                 double not;
-                System.out.println("ingrese las notas");
+                System.out.println("ingrese las notas del cuarto alumno");
                 not=scan.nextDouble();
                 suma=suma+not;
                 f++;
@@ -371,19 +376,19 @@ public class MenuIPC1 {
             
             
             
-        }
+        }//no pude realizar la matriz
         
         public static void ingreasarnota5(){
             Scanner scan = new Scanner(System.in);
            
             int notas;
-            System.out.println("ingrese numero de notas");
+            System.out.println("ingrese numero de notas del quinto alumno");
             notas= scan.nextInt();
             
             double g=1.0,prom4=0.0,suma=0.0;
             while(g>=1 && g<=notas){
                 double not;
-                System.out.println("ingrese las notas");
+                System.out.println("ingrese las notas del quinto alumno");
                 not=scan.nextDouble();
                 suma=suma+not;
                 g++;
@@ -394,19 +399,19 @@ public class MenuIPC1 {
             
             
             
-        }
+        }//no pude realizar la matriz
         
         public static void ingreasarnota6(){
             Scanner scan = new Scanner(System.in);
            
             int notas;
-            System.out.println("ingrese numero de notas");
+            System.out.println("ingrese numero de notas del sexto alumno");
             notas= scan.nextInt();
             
             double h=1.0,prom5=0.0,suma=0.0;
             while(h>=1 && h<=notas){
                 double not;
-                System.out.println("ingrese las notas");
+                System.out.println("ingrese las notas del sexto alumno");
                 not=scan.nextDouble();
                 suma=suma+not;
                 h++;
@@ -417,41 +422,8 @@ public class MenuIPC1 {
             
             
             
-        }
-        //no pude realizar la matriz
-        public static void prueba(){
-            int matriz [] [] = new int [5][5];
-            int alumno1[] = {0};
-            int alumno2[] = {0};
-            int alumno3[] = {0};
-            int alumno4[] = {0};
-            int alumno5[] = {5,20,36,50,30};
-            int fila;
-            int columna;
-            int contador = 1;
-
-            for(fila = 0; fila<matriz.length; fila++){
-                for(columna = 0; columna<matriz.length; columna++){
-                    if(fila==0){
-                    matriz[fila][columna]=alumno1[columna];
-                    }else if(fila==1){
-                    matriz[fila][columna]=alumno2[columna];
-                    }else if(fila==2){
-                    matriz[fila][columna]=alumno3[columna];
-                    }else if(fila ==3){
-                    matriz[fila][columna]=alumno4[columna];
-                    }else if(fila ==4){
-                    matriz[fila][columna]=alumno5[columna];
-                    }
-                }   
-            }
-            for(fila = 0; fila<matriz.length; fila++){
-                for(columna = 0; columna<matriz.length; columna++){
-                    System.out.print("\t"+matriz[fila][columna]+" ");
-                }
-                System.out.println("");
-            }
         }//no pude realizar la matriz
+        
         
         public static void salir(){
         System.out.println("Gracias por usar el programa");
